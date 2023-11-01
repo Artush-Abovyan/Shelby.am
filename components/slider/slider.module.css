@@ -1,0 +1,82 @@
+.line {
+    width: 1920px;
+    height: 500px;
+    position: absolute;
+    
+    top: 50%; /* Vertically center the text */
+    left: 50%; /* Horizontally center the text */
+    transform: translate(-50%, -50%); /* Center the text */
+    text-align: center; /* Center the text horizontally */
+    font-size: 73px; /* Adjust the font size as needed */
+    line-height: 1.2; /* Adjust the line height as needed */
+  }
+.lineUp{
+    animation: 7s anim-lineUp ease-out infinite;
+    
+}
+@keyframes anim-lineUp{
+    0%{
+        opacity: 0;
+        transform: translate(80%);
+    }
+    20%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+        transform: translatey(0%);
+    }
+    100%{
+        opacity: 1;
+        transform: translatey(0%);
+    }
+}
+/* .box_button{
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    color: #ffffff;
+    border-color: rgb(255, 110, 6);
+    font-weight: 700;
+    border-radius: 0;
+    background-color: rgb(255, 221, 0);
+    height: 59px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 25px;
+    line-height: 60px;
+    margin-top: 400px;
+    left: 11%;
+    animation: 7s anim-lineUp ease-out infinite;
+    align-items: center;
+
+} */
+.box_button {
+    position: absolute;
+    color: #ffffff;
+    border-color: rgb(255, 110, 6);
+    font-weight: 700;
+    border-radius: 0;
+    background-color: rgb(255, 221, 0);
+    font-size: 25px;
+    height: 59px;
+    margin-bottom: 570px;
+    margin-left: 46%;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center; /* Center the text horizontally */
+    bottom: 0; /* Position the button at the bottom of its container */
+    display: flex;
+    flex-direction: column; /* Display text and "Location" button vertically */
+    align-items: center; /* Center text and button horizontally */
+    justify-content: center; /* Center text and button vertically */
+    animation: 7s anim-lineUp ease-out infinite;
+  }
+.box_button:hover{
+    background: #2f2509;
+    transition: all 0.5s;
+}

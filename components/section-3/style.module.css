@@ -1,0 +1,69 @@
+.text1 {
+    
+    color: #1C1C1C;
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 300;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+.text2 {
+    
+    color: #303030;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+.photo {
+    overflow: hidden;
+    position: relative;
+}
+@media (max-width:770px) {
+    .photo{
+        max-width: 300px;
+    }
+}
+.photo img {
+    transition: transform 0.5s;
+}
+.photo:hover img {
+    transform: scale(1.1);
+}
+.text3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: all 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+}
+.photo:hover .text3 {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.5);
+}
+.text4 {
+    
+    color: white;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.description {
+    
+    color: white;
+    font-size: 15px;
+    line-height: 17px;
+    font-weight: 300;
+    margin-top: 20px;
+}
